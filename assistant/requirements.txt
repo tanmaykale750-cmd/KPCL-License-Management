@@ -1,0 +1,18 @@
+# Python 3.11 - 3.13 (3.12 recommended)
+#
+# scikit-learn is pinned because the shipped trained model (components/member2_ml/artifacts/forecaster.pkl)
+# was saved with this version; a different version may refuse to load it (then retrain:
+# python scripts/build_pipeline.py --retrain).
+scikit-learn==1.9.1
+numpy>=2.0,<3
+pandas>=2.2,<4
+scipy>=1.11
+requests>=2.31          # LLM calls (Anthropic / OpenAI-compatible) over HTTPS
+python-dotenv>=1.0      # reads .env
+streamlit>=1.36,<2
+matplotlib>=3.8         # Member 2's simulation charts
+
+# Optional
+# xgboost>=2.0          # only to retrain Member 2's model with --backend xgboost
+# pytest>=8             # alternative test runner (the suite uses unittest)
+# fastapi, uvicorn      # only for Member 2's optional REST API (components/member2_ml/api.py)

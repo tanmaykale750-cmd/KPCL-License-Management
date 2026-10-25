@@ -1,0 +1,105 @@
+/*
+ * Theme E — Patina Workbench design tokens.
+ * Proposed interface tokens, not verified KPCL brand specifications.
+ * Every colour, size and radius used by components comes from here.
+ */
+:root {
+  /* Brand-compatible accents (provisional until official KPCL values are supplied) */
+  --teal: #0e6b68;
+  --teal-strong: #0b5653;
+  --teal-mid: #2f8a85;
+  --teal-soft: #a9cfcb;
+  --teal-tint: #dcedeb;
+  --teal-wash: #eef6f5;
+  --copper: #a65f2e;
+  --copper-mid: #c58a5c;
+  --copper-soft: #e9cdb6;
+  --copper-tint: #f6e9de;
+
+  /* Surfaces */
+  --page: #f3f4f2;
+  --panel: #ffffff;
+  --header: #faf9f5;
+  --surface-sunken: #f7f8f6;
+  --surface-hover: #f1f4f2;
+  --row-selected: #e8f2f1;
+
+  /* Graphite workbench */
+  --sidebar: #1e2427;
+  --sidebar-raised: #263034;
+  --sidebar-active: #2b4e4b;
+  --sidebar-text: #c8d0cf;
+  --sidebar-strong: #eef2f1;
+  --sidebar-muted: #8e9a99;
+  --sidebar-rule: #323c40;
+  --ink-panel: #1f2b2a;
+  --ink-panel-raised: #273534;
+  --ink-text: #e9eeed;
+  --ink-text-2: #a9b7b5;
+  --ink-rule: #34423f;
+
+  /* Text and rules */
+  --text: #15191c;
+  --text-2: #59626a;
+  --text-3: #6b747b;
+  --text-inverse: #ffffff;
+  --border: #d6dad8;
+  --border-strong: #b9c0bd;
+  --rule-total: #15191c;
+
+  /* Status (always paired with an icon and a label) */
+  --ok: #2d6a4f;
+  --ok-tint: #e5f0ea;
+  --warn: #9a5b00;
+  --warn-tint: #f7eedd;
+  --crit: #a61b1b;
+  --crit-tint: #f8e4e3;
+  --info: #1f5f99;
+  --info-tint: #e3edf7;
+  --neutral: #59626a;
+  --neutral-tint: #eef0ee;
+
+  /* Charts */
+  --chart-actual: #2a3236;
+  --chart-capacity: #2a3236;
+  --chart-p50: #0e6b68;
+  --chart-band: rgba(14, 107, 104, 0.14);
+  --chart-grid: #e7eae8;
+  --chart-axis: #7a8389;
+  --chart-used: #1f5f63;
+  --chart-idle: #a9cfcb;
+  --chart-unused: #c58a5c;
+  --chart-copper: #a65f2e;
+
+  /* Type */
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --fs-label: 11px;
+  --fs-small: 12px;
+  --fs-table: 12.5px;
+  --fs-body: 13px;
+  --fs-section: 15px;
+  --fs-headline: 18px;
+  --fs-title: 20px;
+  --fs-kpi: 25px;
+
+  /* Space (8px grid, 4px for dense controls) */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 20px;
+  --s6: 24px;
+  --s8: 32px;
+
+  /* Shape */
+  --radius: 4px;
+  --row-h: 32px;
+  --row-h-ledger: 36px;
+  --control-h: 32px;
+  --sidebar-w: 216px;
+  --header-h: 52px;
+  --shadow-overlay: 0 12px 32px rgba(21, 25, 28, 0.16), 0 2px 6px rgba(21, 25, 28, 0.08);
+  --focus: 0 0 0 2px var(--panel), 0 0 0 4px var(--teal);
+  --motion: 150ms ease;
+}

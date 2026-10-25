@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "summary": {
+    "rows": 102368,
+    "projects": 1500,
+    "portfolios": 75,
+    "software": 8,
+    "target_mean": 6.68252,
+    "target_max": 31,
+    "shortage_rows": 0.14565,
+    "target_months": "2024-12-30 to 2028-01-15"
+  },
+  "checks": [
+    {
+      "check": "unique_row_id",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 duplicates"
+    },
+    {
+      "check": "unique_prediction_key",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 duplicate keys"
+    },
+    {
+      "check": "target_present_and_non_negative",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 missing, min 0"
+    },
+    {
+      "check": "pool_peak_at_least_project_need",
+      "passed": true,
+      "severity": "warning",
+      "detail": "pool peak >= this project's own need (allowing the 0.85 coincidence factor)"
+    },
+    {
+      "check": "shortfall_consistent",
+      "passed": true,
+      "severity": "error",
+      "detail": "shortfall = max(0, pool peak - licences owned)"
+    },
+    {
+      "check": "one_portfolio_per_project",
+      "passed": true,
+      "severity": "error",
+      "detail": "every project belongs to exactly one licence pool"
+    },
+    {
+      "check": "cutoff_before_target",
+      "passed": true,
+      "severity": "error",
+      "detail": "predictions are made before the month they predict"
+    },
+    {
+      "check": "history_blank_only_at_cold_start",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed-usage columns are empty exactly when nothing has been observed yet"
+    },
+    {
+      "check": "owned_matches_lookup",
+      "passed": true,
+      "severity": "error",
+      "detail": "licences_owned_for_software agrees with lookups/software_lookup.csv"
+    },
+    {
+      "check": "no_target_in_features",
+      "passed": true,
+      "severity": "info",
+      "detail": "excluded future observations: ['target_month_start', 'target_licences_required', 'target_monthly_licence_cost_inr', 'target_avg_daily_peak', 'target_portfolio_peak_demand', 'target_portfolio_shortfall_licences', 'target_portfolio_shortfall_flag', 'target_cost_optimal_inr', 'target_shortfall_cost_optimal_inr', 'target_idle_licence_cost_month_inr', 'target_requirement_class']"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+software_id,software_name,software_category,vendor,licences_owned,annual_cost_per_licence_inr,monthly_cost_per_licence_inr,temporary_monthly_cost_per_licence_inr,temporary_multiplier,breakeven_months_temp_vs_annual,cost_data_status
+SW001,Autodesk Inventor,CAD,Autodesk,16,185000,15416.67,24666.67,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"
+SW002,SOLIDWORKS,CAD,Dassault Systemes,10,210000,17500.0,28000.0,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"
+SW003,ANSYS Mechanical,CAE/Simulation,Ansys,12,320000,26666.67,42666.67,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"
+SW004,Altair HyperWorks,CAE/Simulation,Altair,8,275000,22916.67,36666.67,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"
+SW005,AutoCAD,CAD/Drafting,Autodesk,20,95000,7916.67,12666.67,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"
+SW006,Cadence OrCAD,EDA,Cadence,7,240000,20000.0,32000.0,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"
+SW007,MATLAB,Engineering Computing,MathWorks,13,150000,12500.0,20000.0,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"
+SW008,Siemens NX,CAD/CAM,Siemens,10,290000,24166.67,38666.67,1.6,7.5,"Synthetic planning assumption (savings = Possible, not Confirmed)"

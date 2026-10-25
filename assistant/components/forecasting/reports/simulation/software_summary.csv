@@ -1,0 +1,9 @@
+software,pools,pool_months_at_risk,expected_shortage_licence_months,idle_cost_inr,median_utilisation_pct
+ANSYS Mechanical,74,168,317.55,63227601.24,58.33
+Altair HyperWorks,68,175,343.15,32773484.98,62.5
+AutoCAD,75,0,0.0,57250972.54,20.0
+Autodesk Inventor,73,0,0.12,81955476.37,25.0
+Cadence OrCAD,69,188,461.79,24801935.0,57.14
+MATLAB,72,97,81.33,35631400.0,46.15
+SOLIDWORKS,71,26,8.83,50347346.88,30.0
+Siemens NX,71,28,17.85,65084763.35,30.0

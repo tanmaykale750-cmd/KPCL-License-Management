@@ -1,0 +1,8 @@
+xgboost>=2.0          # quantile objective, native categorical support, TreeSHAP
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.7     # only used if xgboost is missing (fallback backend)
+matplotlib>=3.8
+fastapi>=0.110        # optional: REST API
+uvicorn>=0.29         # optional: REST API
+pydantic>=2.5

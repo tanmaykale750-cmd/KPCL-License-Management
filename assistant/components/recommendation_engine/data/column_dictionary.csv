@@ -1,0 +1,374 @@
+file_name,column_name,description
+raw_usage_logs.csv,raw_row_id,Row id in the raw export
+raw_usage_logs.csv,source_record_id,Record id from the source system
+raw_usage_logs.csv,session_id,Licence session id (business key)
+raw_usage_logs.csv,user_id,User id (USRnnn)
+raw_usage_logs.csv,user_name,Synthetic user name
+raw_usage_logs.csv,department,Department
+raw_usage_logs.csv,team_id,Team id
+raw_usage_logs.csv,project_id,Project id (PRJnnn)
+raw_usage_logs.csv,project_name,Project name
+raw_usage_logs.csv,software_id,Software id (SWnnn)
+raw_usage_logs.csv,software_name,Software name
+raw_usage_logs.csv,license_type,Concurrent / named licence model
+raw_usage_logs.csv,license_server,Licence server host
+raw_usage_logs.csv,login_timestamp,Session start (local time)
+raw_usage_logs.csv,logout_timestamp,Session end (local time)
+raw_usage_logs.csv,session_status,Status as reported by the source (Completed / Open)
+raw_usage_logs.csv,active_minutes,Raw active minutes
+raw_usage_logs.csv,idle_minutes,Raw idle minutes
+raw_usage_logs.csv,telemetry_available,True if the session has active/idle telemetry that passed checks
+raw_usage_logs.csv,telemetry_source,Where the activity numbers came from
+raw_usage_logs.csv,client_hostname,Workstation name
+raw_usage_logs.csv,source_system,System that produced the record
+raw_usage_logs.csv,record_created_at,When the source record was created
+raw_usage_logs.csv,notes,Free text
+clean_sessions.csv,raw_row_id,Row id in the raw export
+clean_sessions.csv,source_record_id,Record id from the source system
+clean_sessions.csv,session_id,Licence session id (business key)
+clean_sessions.csv,user_id,User id (USRnnn)
+clean_sessions.csv,user_name,Synthetic user name
+clean_sessions.csv,department,Department
+clean_sessions.csv,team_id,Team id
+clean_sessions.csv,project_id,Project id (PRJnnn)
+clean_sessions.csv,project_name,Project name
+clean_sessions.csv,software_id,Software id (SWnnn)
+clean_sessions.csv,software_name,Software name
+clean_sessions.csv,license_type,Concurrent / named licence model
+clean_sessions.csv,license_server,Licence server host
+clean_sessions.csv,login_timestamp,Session start (local time)
+clean_sessions.csv,logout_timestamp,Session end (local time)
+clean_sessions.csv,session_date,Date of login
+clean_sessions.csv,weekday,"Weekday of login, 0=Mon..6=Sun"
+clean_sessions.csv,login_hour,Hour of login 0-23
+clean_sessions.csv,logout_hour,Hour of logout 0-23
+clean_sessions.csv,session_duration_minutes,"Logout minus login, minutes"
+clean_sessions.csv,active_minutes_observed,Minutes with user input (telemetry only)
+clean_sessions.csv,idle_minutes_observed,Minutes idle (telemetry only)
+clean_sessions.csv,idle_pct,Idle minutes / duration x 100 (telemetry only)
+clean_sessions.csv,telemetry_available,True if the session has active/idle telemetry that passed checks
+clean_sessions.csv,telemetry_source,Where the activity numbers came from
+clean_sessions.csv,activity_measurement_status,Plain-language status of telemetry
+clean_sessions.csv,client_hostname,Workstation name
+clean_sessions.csv,source_system,System that produced the record
+clean_sessions.csv,record_created_at,When the source record was created
+clean_sessions.csv,duration_quality_flag,Valid for every clean session
+clean_sessions.csv,outside_planned_phase,"True if no scheduled phase covers this project+software on this date (kept, flagged)"
+clean_sessions.csv,validation_status,PASS / PASS_WITH_WARNING / EXCLUDED
+clean_sessions.csv,notes,Free text
+validation_detail.csv,raw_row_id,Row id in the raw export
+validation_detail.csv,source_record_id,Record id from the source system
+validation_detail.csv,session_id,Licence session id (business key)
+validation_detail.csv,validation_status,PASS / PASS_WITH_WARNING / EXCLUDED
+validation_detail.csv,primary_exclusion_reason,The single reason a row was excluded (blank if kept)
+validation_detail.csv,validation_flags,"All flags raised, pipe-separated"
+validation_detail.csv,duplicate_session_id,True for 2nd+ copies
+validation_detail.csv,conflicting_duplicate,Duplicate whose logout differs from the kept copy
+validation_detail.csv,missing_login,Login blank
+validation_detail.csv,missing_logout,Logout blank
+validation_detail.csv,invalid_timestamp,Timestamp not parseable
+validation_detail.csv,invalid_duration,Logout <= login or > 12h
+validation_detail.csv,reference_integrity_failure,Unknown/missing user or software
+validation_detail.csv,future_timestamp,After data cut-off
+validation_detail.csv,id_format_fixed,Ids/names standardised
+validation_detail.csv,telemetry_inconsistent,active+idle != duration
+validation_detail.csv,outside_planned_phase,"True if no scheduled phase covers this project+software on this date (kept, flagged)"
+validation_detail.csv,cleaning_action,What was done with the row
+validation_summary.csv,check_id,Check id
+validation_summary.csv,check,Check name
+validation_summary.csv,dimension,Data-quality dimension
+validation_summary.csv,rule,Rule applied
+validation_summary.csv,rows_flagged,Rows raising the flag (may overlap)
+validation_summary.csv,pct_of_raw_rows,rows_flagged / raw rows
+validation_summary.csv,action,Action taken
+validation_summary.csv,rows_excluded_as_primary_reason,Rows excluded with this as the primary reason
+data_quality_by_software.csv,software_id,Software id (SWnnn)
+data_quality_by_software.csv,raw_rows,Raw rows
+data_quality_by_software.csv,retained_rows,Rows kept
+data_quality_by_software.csv,excluded_rows,Rows excluded
+data_quality_by_software.csv,quality_score_pct,retained / raw x 100
+licence_inventory.csv,software_id,Software id (SWnnn)
+licence_inventory.csv,software_name,Software name
+licence_inventory.csv,vendor,Vendor
+licence_inventory.csv,category,Software category
+licence_inventory.csv,license_type,Concurrent / named licence model
+licence_inventory.csv,license_server,Licence server host
+licence_inventory.csv,purchased_licenses,Licences purchased
+licence_inventory.csv,usable_licenses,Licences usable at the same time (concurrent cap)
+licence_inventory.csv,annual_cost_per_license_inr,"Annual cost per licence, INR (synthetic assumption)"
+licence_inventory.csv,annual_contract_value_inr,"purchased x annual cost, INR"
+licence_inventory.csv,currency,Currency
+licence_inventory.csv,renewal_date,Contract renewal date
+licence_inventory.csv,support_end_date,Support end date
+licence_inventory.csv,renewal_notice_days,"Notice period to change quantity, days"
+licence_inventory.csv,renewal_notice_deadline,Last date to give notice (renewal_date - notice days)
+licence_inventory.csv,maintenance_status,Maintenance state
+licence_inventory.csv,contract_type,Contract type
+licence_inventory.csv,criticality,Business criticality
+licence_inventory.csv,cost_source,Where the price came from (synthetic)
+licence_inventory.csv,renewal_decision_status,Decision state for renewal
+licence_inventory.csv,notes,Free text
+project_schedule.csv,project_id,Project id (PRJnnn)
+project_schedule.csv,project_name,Project name
+project_schedule.csv,team_id,Team id
+project_schedule.csv,department,Department
+project_schedule.csv,project_priority,High / Medium / Low
+project_schedule.csv,phase_order,Order within project
+project_schedule.csv,phase_name,Project phase
+project_schedule.csv,phase_start_date,Phase start
+project_schedule.csv,phase_end_date,Phase end
+project_schedule.csv,planned_team_size,Team headcount
+project_schedule.csv,phase_intensity_factor,Planned intensity of the phase 0-1
+project_schedule.csv,software_id,Software id (SWnnn)
+project_schedule.csv,software_name,Software name
+project_schedule.csv,software_need_weight,How central the software is to the project 0-1
+project_schedule.csv,expected_concurrent_users,Planning estimate of simultaneous users
+project_schedule.csv,schedule_status,Completed / In progress / Planned (vs as-of date)
+project_schedule.csv,schedule_source,Where the plan came from
+users.csv,user_id,User id (USRnnn)
+users.csv,user_name,Synthetic user name
+users.csv,department,Department
+users.csv,team_id,Team id
+users.csv,role,Job role
+users.csv,account_status,Active / Left company
+users.csv,last_working_date,Last working day (leavers)
+users.csv,work_location,City
+users.csv,manager_user_id,Team lead user id
+users.csv,employment_status_source,Source of status
+users.csv,data_source,Source of the record
+users.csv,notes,Free text
+user_software_access.csv,user_id,User id (USRnnn)
+user_software_access.csv,software_id,Software id (SWnnn)
+user_software_access.csv,entitlement_source,Project PRJnnn or Legacy access
+licence_denials.csv,denial_id,Denial id
+licence_denials.csv,denial_timestamp,When the checkout was refused
+licence_denials.csv,user_id,User id (USRnnn)
+licence_denials.csv,user_name,Synthetic user name
+licence_denials.csv,department,Department
+licence_denials.csv,team_id,Team id
+licence_denials.csv,project_id,Project id (PRJnnn)
+licence_denials.csv,software_id,Software id (SWnnn)
+licence_denials.csv,software_name,Software name
+licence_denials.csv,attempt_number,"1st, 2nd or 3rd attempt by the user"
+licence_denials.csv,outcome,Retried later / Abandoned
+licence_denials.csv,source_system,System that produced the record
+licence_denials.csv,notes,Free text
+assumptions.csv,assumption_key,Key
+assumptions.csv,value,Value
+assumptions.csv,unit,Unit
+assumptions.csv,description,Description
+assumptions.csv,status,Status of the assumption
+usage_metrics.csv,metric_period_start,Start of metric window
+usage_metrics.csv,metric_period_end,End of metric window (as-of date)
+usage_metrics.csv,software_id,Software id (SWnnn)
+usage_metrics.csv,software_name,Software name
+usage_metrics.csv,vendor,Vendor
+usage_metrics.csv,category,Software category
+usage_metrics.csv,department_scope,All
+usage_metrics.csv,purchased_licenses,Licences purchased
+usage_metrics.csv,usable_licenses,Licences usable at the same time (concurrent cap)
+usage_metrics.csv,annual_cost_per_license_inr,"Annual cost per licence, INR (synthetic assumption)"
+usage_metrics.csv,entitled_users,Users entitled to the software
+usage_metrics.csv,unique_users,Distinct users
+usage_metrics.csv,sessions_count,Number of clean sessions
+usage_metrics.csv,total_session_hours,"Sum of session durations, hours"
+usage_metrics.csv,average_session_duration_minutes,"Mean session length, minutes"
+usage_metrics.csv,median_session_duration_minutes,Median session length
+usage_metrics.csv,peak_occupied_licences,Maximum licences in use at once (1-minute resolution)
+usage_metrics.csv,peak_occupied_at,First minute the peak occurred
+usage_metrics.csv,available_licences_at_peak,usable - peak occupied (>=0)
+usage_metrics.csv,avg_occupied_licences_business_hours,"Mean licences in use, Mon-Fri 08-18 (non-holiday)"
+usage_metrics.csv,avg_available_licences_business_hours,"usable - avg occupied, business hours"
+usage_metrics.csv,p95_occupied_licences_business_hours,"95th pct occupied, business hours"
+usage_metrics.csv,peak_utilisation_pct,Peak occupied / usable x 100
+usage_metrics.csv,avg_utilisation_business_hours_pct,"Average occupied / usable x 100, business hours"
+usage_metrics.csv,hours_at_full_capacity,Hours with every licence in use
+usage_metrics.csv,pct_business_time_at_full_capacity,% of business minutes with every licence in use
+usage_metrics.csv,hours_at_or_above_90pct_capacity,Hours at >=90% of licences
+usage_metrics.csv,peak_usage_hour_local,Hour with highest average occupancy (business days)
+usage_metrics.csv,peak_login_hour_local,Hour with most logins
+usage_metrics.csv,sessions_started_in_peak_login_hour,Logins in that hour
+usage_metrics.csv,denied_checkout_requests,Checkout attempts refused because no licence was free
+usage_metrics.csv,users_denied,Distinct users denied
+usage_metrics.csv,abandoned_requests,Denials where the user gave up
+usage_metrics.csv,peak_demand_incl_denials,Peak occupied + users waiting after a denial (15-min window) = best observable demand; USE AS ML TARGET
+usage_metrics.csv,shortfall_licences_at_peak_demand,"max(peak demand - usable, 0)"
+usage_metrics.csv,capacity_constrained,True if any denial in the period
+usage_metrics.csv,telemetry_coverage_percent,% of sessions with usable telemetry
+usage_metrics.csv,active_minutes_observed_from_telemetry,"Active minutes, telemetry sessions only"
+usage_metrics.csv,idle_minutes_observed_from_telemetry,"Idle minutes, telemetry sessions only"
+usage_metrics.csv,idle_pct_of_observed_time,"Idle / (active+idle) x 100, telemetry sessions only"
+usage_metrics.csv,estimated_idle_licence_hours,ESTIMATE: idle share x all session hours
+usage_metrics.csv,idle_time_interpretation,How to read idle numbers
+usage_metrics.csv,avg_occupied_business_hours_last_90d,"Mean occupied, last 90 days"
+usage_metrics.csv,peak_occupied_last_90d,"Peak occupied, last 90 days"
+usage_metrics.csv,peak_utilisation_last_90d_pct,Last-90-day peak / usable x 100 (recent need)
+usage_metrics.csv,demand_trend_last90_vs_prev90_pct,"Change in avg occupancy, last 90d vs previous 90d"
+usage_metrics.csv,days_to_renewal_from_as_of,Days from 2026-09-30 to renewal
+usage_metrics.csv,renewal_date,Contract renewal date
+usage_metrics.csv,renewal_notice_deadline,Last date to give notice (renewal_date - notice days)
+usage_metrics.csv,metric_method,How the metric was calculated
+monthly_metrics.csv,month,Calendar month (or yyyy-mm in monthly_metrics)
+monthly_metrics.csv,software_id,Software id (SWnnn)
+monthly_metrics.csv,software_name,Software name
+monthly_metrics.csv,usable_licenses,Licences usable at the same time (concurrent cap)
+monthly_metrics.csv,sessions_count,Number of clean sessions
+monthly_metrics.csv,unique_users,Distinct users
+monthly_metrics.csv,total_session_hours,"Sum of session durations, hours"
+monthly_metrics.csv,avg_occupied_licences_business_hours,"Mean licences in use, Mon-Fri 08-18 (non-holiday)"
+monthly_metrics.csv,peak_occupied_licences,Maximum licences in use at once (1-minute resolution)
+monthly_metrics.csv,peak_utilisation_pct,Peak occupied / usable x 100
+monthly_metrics.csv,avg_utilisation_business_hours_pct,"Average occupied / usable x 100, business hours"
+monthly_metrics.csv,hours_at_full_capacity,Hours with every licence in use
+monthly_metrics.csv,denied_checkout_requests,Checkout attempts refused because no licence was free
+monthly_metrics.csv,peak_demand_incl_denials,Peak occupied + users waiting after a denial (15-min window) = best observable demand; USE AS ML TARGET
+monthly_metrics.csv,idle_pct_of_observed_time,"Idle / (active+idle) x 100, telemetry sessions only"
+hourly_demand.csv,software_id,Software id (SWnnn)
+hourly_demand.csv,software_name,Software name
+hourly_demand.csv,hour_of_day,0-23
+hourly_demand.csv,avg_occupied_licences,Mean licences in use
+hourly_demand.csv,p95_occupied_licences,95th percentile licences in use
+hourly_demand.csv,max_occupied_licences,Maximum licences in use
+hourly_demand.csv,sessions_started,Sessions that started that day
+hourly_demand.csv,usable_licenses,Licences usable at the same time (concurrent cap)
+hourly_demand.csv,avg_utilisation_pct,avg occupied / usable x 100
+hourly_demand.csv,peak_utilisation_pct,Peak occupied / usable x 100
+hourly_demand.csv,is_peak_hour,True for the hour with the highest average occupancy
+hourly_demand.csv,period_start,Window start
+hourly_demand.csv,period_end,Window end
+hourly_demand.csv,metric_method,How the metric was calculated
+weekday_hour_heatmap.csv,software_id,Software id (SWnnn)
+weekday_hour_heatmap.csv,weekday,"Weekday of login, 0=Mon..6=Sun"
+weekday_hour_heatmap.csv,weekday_name,Mon..Sun
+weekday_hour_heatmap.csv,hour_of_day,0-23
+weekday_hour_heatmap.csv,avg_occupied_licences,Mean licences in use
+weekday_hour_heatmap.csv,usable_licenses,Licences usable at the same time (concurrent cap)
+department_metrics.csv,metric_period_start,Start of metric window
+department_metrics.csv,metric_period_end,End of metric window (as-of date)
+department_metrics.csv,department,Department
+department_metrics.csv,software_id,Software id (SWnnn)
+department_metrics.csv,software_name,Software name
+department_metrics.csv,unique_users,Distinct users
+department_metrics.csv,teams_count,Distinct teams
+department_metrics.csv,sessions_count,Number of clean sessions
+department_metrics.csv,total_session_hours,"Sum of session durations, hours"
+department_metrics.csv,average_session_duration_minutes,"Mean session length, minutes"
+department_metrics.csv,share_of_software_hours_pct,Share of that software's total hours
+department_metrics.csv,denied_checkout_requests,Checkout attempts refused because no licence was free
+department_metrics.csv,active_minutes_observed_from_telemetry,"Active minutes, telemetry sessions only"
+department_metrics.csv,idle_minutes_observed_from_telemetry,"Idle minutes, telemetry sessions only"
+department_metrics.csv,idle_pct_of_observed_time,"Idle / (active+idle) x 100, telemetry sessions only"
+user_metrics.csv,metric_period_start,Start of metric window
+user_metrics.csv,metric_period_end,End of metric window (as-of date)
+user_metrics.csv,user_id,User id (USRnnn)
+user_metrics.csv,user_name,Synthetic user name
+user_metrics.csv,department,Department
+user_metrics.csv,team_id,Team id
+user_metrics.csv,role,Job role
+user_metrics.csv,account_status,Active / Left company
+user_metrics.csv,software_id,Software id (SWnnn)
+user_metrics.csv,software_name,Software name
+user_metrics.csv,entitlement_source,Project PRJnnn or Legacy access
+user_metrics.csv,sessions_count,Number of clean sessions
+user_metrics.csv,total_session_hours,"Sum of session durations, hours"
+user_metrics.csv,average_session_duration_minutes,"Mean session length, minutes"
+user_metrics.csv,first_session_date,First session
+user_metrics.csv,last_session_date,Most recent session
+user_metrics.csv,days_since_last_use,As-of date minus last session
+user_metrics.csv,sessions_last_30d,Sessions in last 30 days
+user_metrics.csv,hours_last_90d,Session hours in last 90 days
+user_metrics.csv,share_of_software_hours_pct,Share of that software's total hours
+user_metrics.csv,active_minutes_observed_from_telemetry,"Active minutes, telemetry sessions only"
+user_metrics.csv,idle_minutes_observed_from_telemetry,"Idle minutes, telemetry sessions only"
+user_metrics.csv,telemetry_sessions_count,Sessions with telemetry
+user_metrics.csv,telemetry_coverage_percent,% of sessions with usable telemetry
+user_metrics.csv,idle_pct_of_observed_time,"Idle / (active+idle) x 100, telemetry sessions only"
+user_metrics.csv,denied_requests,Denied checkouts for this user
+user_metrics.csv,usage_segment,Heavy / Regular / Light / Dormant / Never used / Leaver
+user_metrics.csv,segment_rule,Rule used for usage_segment
+user_summary.csv,user_id,User id (USRnnn)
+user_summary.csv,user_name,Synthetic user name
+user_summary.csv,department,Department
+user_summary.csv,team_id,Team id
+user_summary.csv,role,Job role
+user_summary.csv,account_status,Active / Left company
+user_summary.csv,entitled_software,Software the user can use
+user_summary.csv,software_used,Software actually used
+user_summary.csv,unused_entitlements,entitled - used
+user_summary.csv,sessions_count,Number of clean sessions
+user_summary.csv,total_session_hours,"Sum of session durations, hours"
+user_summary.csv,hours_last_90d,Session hours in last 90 days
+user_summary.csv,last_session_date,Most recent session
+user_summary.csv,days_since_last_use,As-of date minus last session
+user_summary.csv,denied_requests,Denied checkouts for this user
+user_summary.csv,usage_segment,Heavy / Regular / Light / Dormant / Never used / Leaver
+daily_demand.csv,date,Calendar date
+daily_demand.csv,software_id,Software id (SWnnn)
+daily_demand.csv,software_name,Software name
+daily_demand.csv,usable_licenses,Licences usable at the same time (concurrent cap)
+daily_demand.csv,sessions_started,Sessions that started that day
+daily_demand.csv,unique_users,Distinct users
+daily_demand.csv,session_hours,Total session hours that day
+daily_demand.csv,peak_occupied_licences,Maximum licences in use at once (1-minute resolution)
+daily_demand.csv,avg_occupied_licences_08_18,Mean licences in use 08:00-18:00
+daily_demand.csv,minutes_at_full_capacity,Minutes when every licence was in use
+daily_demand.csv,denied_checkout_requests,Checkout attempts refused because no licence was free
+daily_demand.csv,peak_demand_incl_denials,Peak occupied + users waiting after a denial (15-min window) = best observable demand; USE AS ML TARGET
+daily_demand.csv,peak_utilisation_pct,Peak occupied / usable x 100
+daily_demand.csv,shortfall_licences,"max(peak_demand_incl_denials - usable, 0)"
+daily_demand.csv,day_of_week,0=Mon..6=Sun
+daily_demand.csv,is_weekend,1 if Sat/Sun
+daily_demand.csv,is_holiday,1 if on the synthetic holiday calendar
+daily_demand.csv,is_working_day,1 if weekday and not holiday
+daily_demand.csv,month,Calendar month (or yyyy-mm in monthly_metrics)
+daily_demand.csv,week_of_year,ISO week
+daily_demand.csv,active_projects,Projects with a scheduled phase using this software that day
+daily_demand.csv,planned_users_total,Sum of expected_concurrent_users from schedule that day
+daily_demand.csv,planned_team_size_sum,Sum of planned team sizes of those projects
+daily_demand.csv,max_phase_intensity,Highest phase_intensity_factor among active phases
+daily_demand.csv,high_priority_projects,Count of active High-priority projects
+daily_demand.csv,planned_load_index,Sum(team size x phase intensity x software need weight)
+daily_demand.csv,planned_users_analysis_simulation,Planned users from projects in Analysis & Simulation phase
+daily_demand.csv,planned_users_design,Planned users from projects in Design phase
+daily_demand.csv,planned_users_design_review_sprint,"Planned users from projects in Design Review Sprint (short, intense)"
+daily_demand.csv,planned_users_release_documentation,Planned users in Release & Documentation phase
+daily_demand.csv,planned_users_requirements_planning,Planned users in Requirements & Planning phase
+daily_demand.csv,planned_users_testing_validation,Planned users in Testing & Validation phase
+daily_demand.csv,dominant_phase,Phase contributing most planned users
+daily_demand.csv,capacity_constrained_day,1 if any denial that day
+daily_demand.csv,suggested_split,train (<=2026-07-31) or holdout_test (Aug-Sep 2026)
+future_schedule_features.csv,date,Calendar date
+future_schedule_features.csv,software_id,Software id (SWnnn)
+future_schedule_features.csv,software_name,Software name
+future_schedule_features.csv,usable_licenses,Licences usable at the same time (concurrent cap)
+future_schedule_features.csv,day_of_week,0=Mon..6=Sun
+future_schedule_features.csv,is_weekend,1 if Sat/Sun
+future_schedule_features.csv,is_holiday,1 if on the synthetic holiday calendar
+future_schedule_features.csv,is_working_day,1 if weekday and not holiday
+future_schedule_features.csv,month,Calendar month (or yyyy-mm in monthly_metrics)
+future_schedule_features.csv,week_of_year,ISO week
+future_schedule_features.csv,active_projects,Projects with a scheduled phase using this software that day
+future_schedule_features.csv,planned_users_total,Sum of expected_concurrent_users from schedule that day
+future_schedule_features.csv,planned_team_size_sum,Sum of planned team sizes of those projects
+future_schedule_features.csv,max_phase_intensity,Highest phase_intensity_factor among active phases
+future_schedule_features.csv,high_priority_projects,Count of active High-priority projects
+future_schedule_features.csv,planned_load_index,Sum(team size x phase intensity x software need weight)
+future_schedule_features.csv,planned_users_analysis_simulation,Planned users from projects in Analysis & Simulation phase
+future_schedule_features.csv,planned_users_design,Planned users from projects in Design phase
+future_schedule_features.csv,planned_users_release_documentation,Planned users in Release & Documentation phase
+future_schedule_features.csv,planned_users_requirements_planning,Planned users in Requirements & Planning phase
+future_schedule_features.csv,planned_users_testing_validation,Planned users in Testing & Validation phase
+future_schedule_features.csv,planned_users_design_review_sprint,"Planned users from projects in Design Review Sprint (short, intense)"
+future_schedule_features.csv,dominant_phase,Phase contributing most planned users
+phase_demand_summary.csv,software_id,Software id (SWnnn)
+phase_demand_summary.csv,software_name,Software name
+phase_demand_summary.csv,phase_name,Project phase
+phase_demand_summary.csv,working_days_observed,Working days in phase
+phase_demand_summary.csv,avg_planned_users,Mean planned users
+phase_demand_summary.csv,avg_sessions_per_day,Mean sessions started per working day
+phase_demand_summary.csv,avg_daily_peak_occupied,Mean daily peak occupied
+phase_demand_summary.csv,avg_daily_peak_demand_incl_denials,Mean daily peak demand incl. denials
+phase_demand_summary.csv,share_of_days_capacity_constrained_pct,% of days with at least one denial
+qa_checks.csv,check,Check name
+qa_checks.csv,result,PASS / FAIL
+qa_checks.csv,detail,Evidence

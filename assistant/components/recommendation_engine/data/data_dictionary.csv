@@ -1,0 +1,25 @@
+file_name,layer,purpose,primary_key_or_grain,how_to_use
+raw_usage_logs.csv,SOURCE,"Raw licence-server export, one row per record, deliberately messy (duplicates, missing logouts, bad timestamps, bad ids...).",raw_row_id (session_id repeats for duplicates),Input to validation. Do not use for analytics.
+clean_sessions.csv,CORE,Validated sessions - the table every metric is built from.,session_id,Use this for any session-level analysis. Telemetry fields blank when telemetry_available=false.
+validation_detail.csv,DATA QUALITY,"Row-level outcome for every raw row: status, primary exclusion reason, all flags, cleaning action.",raw_row_id,Audit trail: shows exactly why each row was kept or dropped.
+validation_summary.csv,DATA QUALITY,"One row per validation check: rows flagged, rows excluded as primary reason, action taken.",check_id,Reconciles to the excluded-row total.
+validation_report.json,DATA QUALITY,"Headline data-quality score, exclusions by reason, dimension scores, warnings.",n/a,data_quality_score_percent is the number for the dashboard header.
+data_quality_by_software.csv,DATA QUALITY,Data-quality pass rate per software (plus UNKNOWN for unrecognised ids).,software_id,Optional per-software badge.
+licence_inventory.csv,REFERENCE,"Licences purchased/usable, cost assumptions, renewal dates, notice deadline, criticality.",software_id,All prices synthetic. Join key for everything.
+project_schedule.csv,REFERENCE / ML INPUT,"One row per project x phase x software: dates, team size, phase intensity, expected concurrent users.",project_id + phase_name + software_id,Planning input for the forecast. Includes planned phases through Jun 2027.
+users.csv,REFERENCE,"Synthetic user master incl. leavers (account_status, last_working_date).",user_id,Join for user view.
+user_software_access.csv,REFERENCE,Which user is entitled to which software and why (project vs legacy access).,user_id + software_id,Lets the user view show entitlements that were never used.
+licence_denials.csv,SOURCE / UNMET DEMAND,Checkouts refused because all licences were in use. The direct evidence of shortage.,denial_id,Fixes the old blind spot: unmet demand is now observable.
+assumptions.csv,DECISION INPUT,"Proposed default thresholds and cost assumptions for Members 2-3 (buffer, tolerance, temp-licence price, Possible/Confirmed rule).",assumption_key,Team should confirm or change before use.
+usage_metrics.csv,METRICS - SOFTWARE VIEW,"One row per software: licences purchased/available/occupied, users, duration, peak hours, idle, utilisation, denials, trend, renewal.",software_id,Feeds the software-wise dashboard and recommendations.
+monthly_metrics.csv,METRICS - SOFTWARE VIEW,"Software x month: sessions, hours, peak, utilisation, denials, idle.",month + software_id,Trend charts.
+hourly_demand.csv,METRICS - SOFTWARE VIEW,Software x hour of day: avg / p95 / max occupied licences on business days.,software_id + hour_of_day,Peak-hours chart.
+weekday_hour_heatmap.csv,METRICS - SOFTWARE VIEW,Software x weekday x hour: avg occupied licences.,software_id + weekday + hour_of_day,Heat-map chart.
+department_metrics.csv,METRICS - DEPARTMENT,"Department x software usage, share of hours, denials, idle.",department + software_id,Department drill-down.
+user_metrics.csv,METRICS - USER VIEW,"User x entitled software: sessions, hours, last use, idle, denials, usage segment.",user_id + software_id,Feeds the user-wise dashboard (dormant / never used / leaver).
+user_summary.csv,METRICS - USER VIEW,"One row per user: entitlements vs used, hours, last use, segment.",user_id,User table / bar graph.
+daily_demand.csv,ML,Zero-filled date x software table with demand targets AND schedule features (history 2026-01-01..2026-09-30).,date + software_id,"Training/validation table. suggested_split: train <= 2026-07-31, holdout after."
+future_schedule_features.csv,ML,Same schedule features for 2026-10-01..2027-03-31 (no targets).,date + software_id,Forecast inputs - predict demand for these rows.
+phase_demand_summary.csv,ML / EVIDENCE,Software x phase: avg planned users vs observed demand.,software_id + phase_name,Shows the schedule really drives demand.
+injected_issues_truth.json,QA,Ground truth: how many messy records of each type the generator injected (compare with validation_report.json).,n/a,Proves the validator catches what was planted.
+qa_checks.csv,QA,Result of the independent self-test (code/qa_checks.py).,check,All rows should be PASS.

@@ -1,0 +1,16 @@
+{
+  "_comment": "Non-secret defaults. Any key can be overridden by an environment variable of the same name in UPPER CASE (e.g. TOP_K=10). API keys go in .env, never here.",
+  "forecast_model": "ensemble",
+  "llm_provider": "auto",
+  "anthropic_model": "claude-sonnet-5-5",
+  "anthropic_api_url": "https://api.anthropic.com",
+  "openai_model": "gpt-4o-mini",
+  "openai_base_url": "https://api.openai.com/v1",
+  "temperature": 0.2,
+  "max_tokens": 1200,
+  "request_timeout_s": 60,
+  "max_retries": 2,
+  "rewrite_followups_with_llm": true,
+  "top_k": 8,
+  "history_turns": 6
+}

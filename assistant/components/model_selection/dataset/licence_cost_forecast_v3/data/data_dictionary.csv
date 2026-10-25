@@ -1,0 +1,64 @@
+column,role,description,dtype
+row_id,ID,Unique row id,str
+project_id,ID / group key,Synthetic project id. Split train/test BY project (see split) so no project leaks across sets,str
+portfolio_id,ID / group key,Licence-pool group of ~20 projects that share the same licences (random business-unit grouping). Splits are made by portfolio,str
+split,Split,"train / validation / test (~70/15/15), assigned per PORTFOLIO so no portfolio (and its shared history) crosses sets",str
+sample_weight,Weight,Per-project weight (mean 1): every project counts equally in training; pass as sample_weight. Long projects otherwise dominate (6 to 228 rows per project),float64
+software_id,Feature (categorical),"Software id SW001-SW008. Name, category, price and owned licences: lookups/software_lookup.csv",str
+department,Feature,Owning department of the project,str
+project_priority,Feature,Low / Medium / High,str
+team_size,Feature,Project team headcount,int64
+n_software_in_project,Feature,How many of the 8 tools the project uses,int64
+software_need_weight,Feature,How central this software is to the project (0.4-1.0),float64
+has_design_review_sprint,Feature,1 if plan contains a short intense Design Review Sprint phase,int64
+project_start_date,Info,Project start (varies 2024-12 to 2027-03),str
+project_deadline_date,Info,Planned deadline,str
+deadline_months,Feature,Planned project length in months (2-12),int64
+cutoff_date,Info,Date the prediction is made (start of project-month c+1); only info before this date is used in features,str
+months_elapsed_at_cutoff,Feature,c = months of the project already completed at prediction time (0 = plan-only / cold start),int64
+months_remaining_to_deadline,Feature,deadline_months - months_elapsed_at_cutoff,int64
+forecast_after_months,Feature,"h = how many months ahead of the cut-off we predict (1-6). Example: deadline 5 months, predict after 3 months -> forecast_after_months=3",int64
+target_month_index,Feature,Project-month being predicted (= c + h),int64
+target_month_start,Info,Calendar start date of the predicted month,str
+target_calendar_month,Feature,Calendar month 1-12 of the predicted month (seasonality / holidays),int64
+target_working_days,Feature,Working days in the predicted month,int64
+target_pct_of_project_elapsed,Feature,Where the predicted month falls in the project (0-1),float64
+is_final_planned_month,Feature,1 if predicted month is the last planned month before the deadline,int64
+plan_phase_at_cutoff,Feature,"Planned phase in the last observed month (""Not started"" when c=0)",str
+plan_phase_in_target_month,Feature,Planned dominant phase in the predicted month (known from the plan),str
+plan_phase_intensity_target,Feature,Planned phase intensity 0-1 of that phase,float64
+plan_load_index_target,Feature,Planned load = team size x phase intensity x software-phase affinity x need weight (avg over working days),float64
+plan_expected_users_target,Feature,"Planned max concurrent users in the predicted month (planner estimate, not actual demand)",int64
+licences_owned_for_software,Feature,Licences owned for this software (licence_inventory.csv); needed to read shortage/idle targets,int64
+obs_peak_last_month,Feature,Peak licences used by the project for this software in last observed month (blank when c=0),float64
+obs_peak_max_so_far,Feature,Highest monthly peak observed so far (blank when c=0),float64
+obs_peak_mean_so_far,Feature,Mean of monthly peaks observed so far (blank when c=0),float64
+obs_peak_trend,Feature,"Last month peak minus the month before (blank when c=0, 0 when c=1)",float64
+obs_actual_vs_plan_ratio,Feature,Observed usage divided by planned load so far - shows if the team uses more/less than planned (blank when c=0),float64
+target_licences_required,TARGET (regression),Peak concurrent licences the project needs for this software in the predicted month (incl. unmet demand),int64
+target_monthly_licence_cost_inr,TARGET (cost regression),"target_licences_required x monthly price (annual/12), INR",int64
+target_avg_daily_peak,Alt target,Average of daily peak concurrent licences in the predicted month,float64
+plan_peak_load_target,Feature (plan),Highest planned daily load in the predicted month (team x phase intensity x affinity x need weight),float64
+plan_max_phase_intensity_target,Feature (plan),Highest phase intensity planned in the predicted month (0.1-0.95),float64
+plan_n_phases_target,Feature (plan),Number of different phases inside the predicted month (a phase change = ramp up/down),int64
+plan_load_last_observed_month,Feature (plan),Planned load of the last observed month (blank when c=0),float64
+obs_peak_per_plan_load_last,Feature (history),Observed peak / planned load in the last observed month = how hard this team really uses the tool vs plan; capped at 10 (blank when c=0),float64
+plan_load_change_vs_last_month,Feature (plan),Planned load of predicted month minus last observed month = planned ramp (blank when c=0),float64
+est_target_peak_from_last_ratio,Feature (engineered),obs_peak_per_plan_load_last x plan_load_index_target = quick estimate of the target peak; capped at 30 (blank when c=0),float64
+portfolio_other_active_projects_target,"Feature (portfolio, plan)",Max number of OTHER portfolio projects planned to use this software on a day of the predicted month,int64
+portfolio_planned_load_target,"Feature (portfolio, plan)",Planned load of all portfolio projects on this software in the predicted month (own + others),float64
+portfolio_other_planned_load_target,"Feature (portfolio, plan)",Planned load of the other portfolio projects only,float64
+portfolio_peak_last_30d,"Feature (portfolio, history)","Peak licences the whole portfolio used on this software in the 30 days BEFORE the cut-off (known history, no leakage)",int64
+portfolio_peak_last_90d,"Feature (portfolio, history)","Same, last 90 days before the cut-off",int64
+target_portfolio_peak_demand,TARGET (shared pool),Peak licences the whole portfolio needs on this software in the predicted month (sum of project peaks x 0.85 coincidence factor when >1 project),int64
+months_to_next_renewal,Feature (decision context),Months from the cut-off to the next annual renewal of this software (licence_inventory.csv renewal date). Context for buy/temporary decisions; does not drive demand,float64
+target_month_after_next_renewal,Feature (decision context),"1 if the predicted month falls after the next renewal (a feature, despite the name)",int64
+portfolio_headroom_last_30d,"Feature (portfolio, history)",licences_owned - portfolio_peak_last_30d (negative = pool was exceeded),int64
+portfolio_planned_load_to_owned_ratio,"Feature (portfolio, plan)",portfolio_planned_load_target / licences owned = planned pressure on the pool,float64
+target_portfolio_shortfall_licences,TARGET (shortage),"max(0, target_portfolio_peak_demand - licences_owned) = licences missing",int64
+target_portfolio_shortfall_flag,"TARGET (shortage, binary)",1 if the pool is exceeded in the predicted month (~15% of rows),int64
+months_need_from_target_to_deadline,Feature,Months from the predicted month to the deadline = how long the licences would be needed. >= 7.5 -> buying annually is cheaper than temporary,int64
+target_cost_optimal_inr,TARGET (cost optimisation),"Lower of: buy annually (licences x annual price) or temporary until deadline (licences x temporary monthly price x months_need_from_target_to_deadline), INR",int64
+target_shortfall_cost_optimal_inr,TARGET (cost),"Cheapest cost of covering the shortage: min(buy annual, temporary until deadline) x shortfall licences, INR",int64
+target_idle_licence_cost_month_inr,TARGET (cost / waste),"max(0, licences_owned - portfolio peak) x monthly price = monthly cost of owned licences not needed, INR",int64
+target_requirement_class,TARGET (classification),Low(0-2) / Medium(3-5) / High(6+) from target_licences_required (zero-need merged into Low: only 0.04% of rows),str

@@ -1,0 +1,249 @@
+denial_id,denial_timestamp,user_id,user_name,department,team_id,project_id,software_id,software_name,attempt_number,outcome,source_system,notes
+DEN00001,2026-02-26 15:55:00,USR075,Engineer 75,Manufacturing Engineering,TEAM-ME-01,PRJ006,SW008,Siemens NX,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00002,2026-03-25 14:05:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00003,2026-03-27 17:17:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00004,2026-03-27 17:22:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00005,2026-03-31 13:23:00,USR048,Engineer 48,Product Engineering,TEAM-PE-01,PRJ004,SW008,Siemens NX,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00006,2026-04-02 14:30:00,USR033,Engineer 33,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00007,2026-04-02 14:45:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00008,2026-04-02 15:01:00,USR037,Engineer 37,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00009,2026-04-08 14:26:00,USR045,Engineer 45,Product Engineering,TEAM-PE-01,PRJ004,SW008,Siemens NX,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00010,2026-04-20 13:03:00,USR072,Engineer 72,Manufacturing Engineering,TEAM-ME-01,PRJ006,SW008,Siemens NX,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00011,2026-04-22 10:52:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00012,2026-04-22 10:55:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00013,2026-04-22 11:11:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00014,2026-04-24 14:20:00,USR040,Engineer 40,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00015,2026-04-24 14:34:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00016,2026-04-24 14:34:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00017,2026-04-28 14:23:00,USR034,Engineer 34,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00018,2026-04-30 15:21:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00019,2026-04-30 17:31:00,USR033,Engineer 33,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00020,2026-04-30 19:41:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00021,2026-05-04 16:32:00,USR033,Engineer 33,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00022,2026-05-05 17:30:00,USR071,Engineer 71,Manufacturing Engineering,TEAM-ME-01,PRJ006,SW008,Siemens NX,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00023,2026-05-29 14:54:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00024,2026-05-29 15:10:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00025,2026-06-04 12:35:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00026,2026-06-04 14:00:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00027,2026-06-04 14:00:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00028,2026-06-04 15:00:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00029,2026-06-04 15:00:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00030,2026-06-05 14:30:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00031,2026-06-10 14:39:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00032,2026-06-11 11:45:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00033,2026-06-16 11:50:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00034,2026-06-16 11:50:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00035,2026-06-16 11:56:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00036,2026-06-16 12:10:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00037,2026-06-16 12:16:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00038,2026-06-16 12:32:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00039,2026-06-16 12:33:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00040,2026-06-16 12:35:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00041,2026-06-16 12:42:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00042,2026-06-16 12:43:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00043,2026-06-16 12:47:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00044,2026-06-16 13:08:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00045,2026-06-16 13:17:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00046,2026-06-16 13:18:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00047,2026-06-16 13:20:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00048,2026-06-16 13:40:00,USR022,Engineer 22,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00049,2026-06-16 13:45:00,USR018,Engineer 18,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00050,2026-06-16 13:46:00,USR018,Engineer 18,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00051,2026-06-16 14:55:00,USR022,Engineer 22,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00052,2026-06-16 14:56:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00053,2026-06-16 14:58:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00054,2026-06-16 15:38:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00055,2026-06-16 16:10:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00056,2026-06-16 16:20:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00057,2026-06-16 16:36:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00058,2026-06-16 16:55:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00059,2026-06-16 18:13:00,USR061,Engineer 61,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00060,2026-06-18 10:50:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00061,2026-06-18 11:35:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00062,2026-06-18 11:40:00,USR033,Engineer 33,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00063,2026-06-18 12:08:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00064,2026-06-18 12:20:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00065,2026-06-18 12:53:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00066,2026-06-18 12:53:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00067,2026-06-18 14:10:00,USR034,Engineer 34,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00068,2026-06-18 14:15:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00069,2026-06-18 16:11:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00070,2026-06-18 16:13:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00071,2026-06-18 16:45:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00072,2026-06-18 16:47:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00073,2026-06-22 15:00:00,USR009,Engineer 09,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00074,2026-06-23 13:36:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00075,2026-06-25 14:27:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00076,2026-06-25 14:45:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00077,2026-07-07 11:20:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00078,2026-07-07 11:20:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00079,2026-07-07 11:20:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00080,2026-07-07 11:40:00,USR039,Engineer 39,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00081,2026-07-08 11:32:00,USR068,Engineer 68,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00082,2026-07-08 11:40:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00083,2026-07-08 11:45:00,USR070,Engineer 70,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00084,2026-07-08 11:58:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00085,2026-07-08 12:15:00,USR068,Engineer 68,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00086,2026-07-14 15:05:00,USR019,Engineer 19,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00087,2026-07-14 15:05:00,USR061,Engineer 61,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00088,2026-07-15 11:35:00,USR034,Engineer 34,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00089,2026-07-15 15:20:00,USR066,Engineer 66,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00090,2026-07-15 16:39:00,USR067,Engineer 67,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00091,2026-07-20 11:49:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00092,2026-07-20 11:52:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00093,2026-07-20 12:20:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00094,2026-07-20 12:25:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00095,2026-07-20 12:30:00,USR033,Engineer 33,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00096,2026-07-20 14:39:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00097,2026-07-20 14:54:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00098,2026-07-20 15:40:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00099,2026-07-20 16:18:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00100,2026-07-23 15:05:00,USR065,Engineer 65,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00101,2026-07-23 15:07:00,USR065,Engineer 65,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00102,2026-07-23 15:07:00,USR065,Engineer 65,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00103,2026-07-23 15:10:00,USR065,Engineer 65,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00104,2026-07-23 15:32:00,USR065,Engineer 65,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00105,2026-07-23 15:35:00,USR066,Engineer 66,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00106,2026-07-23 16:10:00,USR037,Engineer 37,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00107,2026-07-27 11:00:00,USR066,Engineer 66,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00108,2026-07-27 11:00:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00109,2026-07-28 11:50:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00110,2026-07-28 11:53:00,USR068,Engineer 68,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00111,2026-07-28 13:42:00,USR068,Engineer 68,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00112,2026-07-28 13:45:00,USR068,Engineer 68,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00113,2026-07-28 13:50:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00114,2026-07-28 15:13:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00115,2026-07-28 18:50:00,USR037,Engineer 37,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00116,2026-07-29 11:51:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00117,2026-07-29 11:56:00,USR022,Engineer 22,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00118,2026-07-29 12:21:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00119,2026-07-29 12:41:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00120,2026-07-29 13:10:00,USR058,Engineer 58,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00121,2026-07-29 16:47:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00122,2026-07-29 16:53:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00123,2026-07-29 16:55:00,USR059,Engineer 59,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00124,2026-07-29 17:37:00,USR059,Engineer 59,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00125,2026-07-29 17:40:00,USR015,Engineer 15,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00126,2026-07-30 14:50:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00127,2026-07-30 15:00:00,USR012,Engineer 12,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00128,2026-07-30 15:35:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00129,2026-07-30 16:25:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00130,2026-07-30 17:01:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00131,2026-07-31 12:26:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00132,2026-07-31 12:26:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00133,2026-07-31 13:30:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00134,2026-07-31 14:15:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00135,2026-07-31 14:30:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00136,2026-07-31 14:40:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00137,2026-07-31 14:49:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00138,2026-07-31 15:00:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00139,2026-07-31 15:15:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00140,2026-07-31 15:20:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00141,2026-07-31 15:31:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00142,2026-07-31 15:43:00,USR067,Engineer 67,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00143,2026-07-31 15:44:00,USR067,Engineer 67,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00144,2026-07-31 15:46:00,USR031,Engineer 31,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00145,2026-07-31 16:05:00,USR034,Engineer 34,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00146,2026-08-03 17:13:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00147,2026-08-03 17:19:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00148,2026-08-05 10:20:00,USR055,Engineer 55,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00149,2026-08-05 15:15:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00150,2026-08-06 13:25:00,USR038,Engineer 38,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00151,2026-08-06 14:20:00,USR067,Engineer 67,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00152,2026-08-06 15:14:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00153,2026-08-06 15:17:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00154,2026-08-06 15:28:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00155,2026-08-06 15:30:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00156,2026-08-06 15:31:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00157,2026-08-07 11:20:00,USR036,Engineer 36,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00158,2026-08-07 11:26:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00159,2026-08-07 11:31:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00160,2026-08-07 12:02:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00161,2026-08-07 12:36:00,USR035,Engineer 35,Electrical Design,TEAM-ED-01,PRJ003,SW006,Cadence OrCAD,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00162,2026-08-07 13:09:00,USR066,Engineer 66,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00163,2026-08-07 13:52:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00164,2026-08-07 13:55:00,USR064,Engineer 64,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00165,2026-08-07 13:57:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00166,2026-08-07 14:00:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00167,2026-08-07 14:00:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00168,2026-08-07 14:16:00,USR069,Engineer 69,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00169,2026-08-07 16:09:00,USR068,Engineer 68,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00170,2026-08-07 16:20:00,USR065,Engineer 65,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00171,2026-08-07 16:42:00,USR065,Engineer 65,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00172,2026-08-07 19:38:00,USR063,Engineer 63,R&D,TEAM-RD-02,PRJ007,SW006,Cadence OrCAD,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00173,2026-08-10 16:09:00,USR018,Engineer 18,CAE & Simulation,TEAM-CAE-01,PRJ002,SW004,Altair HyperWorks,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00174,2026-08-13 13:47:00,USR020,Engineer 20,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00175,2026-08-13 14:00:00,USR019,Engineer 19,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00176,2026-08-13 14:00:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00177,2026-08-13 14:15:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00178,2026-08-13 14:34:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00179,2026-08-13 14:45:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,3,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00180,2026-08-17 11:15:00,USR011,Engineer 11,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00181,2026-08-17 11:42:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00182,2026-08-17 11:45:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00183,2026-08-17 12:12:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00184,2026-08-17 12:25:00,USR012,Engineer 12,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00185,2026-08-18 12:35:00,USR025,Engineer 25,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00186,2026-08-18 13:37:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00187,2026-08-18 13:37:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00188,2026-08-18 13:38:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00189,2026-08-18 13:38:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00190,2026-08-18 13:40:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00191,2026-08-18 13:55:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00192,2026-08-18 13:55:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00193,2026-08-18 14:05:00,USR012,Engineer 12,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00194,2026-08-18 14:05:00,USR015,Engineer 15,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00195,2026-08-18 14:07:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00196,2026-08-18 14:08:00,USR012,Engineer 12,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00197,2026-08-18 14:15:00,USR026,Engineer 26,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00198,2026-08-18 14:20:00,USR012,Engineer 12,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00199,2026-08-18 14:29:00,USR012,Engineer 12,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00200,2026-08-18 14:30:00,USR009,Engineer 09,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00201,2026-08-18 14:37:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00202,2026-08-18 14:46:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00203,2026-08-18 14:51:00,USR009,Engineer 09,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00204,2026-08-18 14:54:00,USR026,Engineer 26,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00205,2026-08-18 15:20:00,USR061,Engineer 61,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00206,2026-08-18 16:54:00,USR058,Engineer 58,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00207,2026-08-18 16:54:00,USR058,Engineer 58,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00208,2026-08-18 16:55:00,USR060,Engineer 60,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00209,2026-08-19 10:50:00,USR028,Engineer 28,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00210,2026-08-20 15:25:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00211,2026-08-20 16:22:00,USR022,Engineer 22,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00212,2026-08-20 16:25:00,USR055,Engineer 55,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00213,2026-08-21 14:50:00,USR015,Engineer 15,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00214,2026-08-21 15:13:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00215,2026-08-21 15:14:00,USR015,Engineer 15,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00216,2026-08-21 15:54:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00217,2026-08-21 15:55:00,USR055,Engineer 55,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00218,2026-08-21 16:00:00,USR056,Engineer 56,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00219,2026-08-21 16:10:00,USR017,Engineer 17,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00220,2026-08-21 16:35:00,USR020,Engineer 20,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00221,2026-08-21 16:38:00,USR058,Engineer 58,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00222,2026-08-21 16:40:00,USR058,Engineer 58,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00223,2026-08-21 16:48:00,USR055,Engineer 55,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00224,2026-08-21 16:49:00,USR055,Engineer 55,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00225,2026-08-21 16:50:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00226,2026-08-21 17:08:00,USR055,Engineer 55,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00227,2026-09-04 16:45:00,USR025,Engineer 25,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00228,2026-09-10 11:50:00,USR011,Engineer 11,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00229,2026-09-10 11:54:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00230,2026-09-10 11:56:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00231,2026-09-10 12:00:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00232,2026-09-10 12:00:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00233,2026-09-10 16:30:00,USR016,Engineer 16,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00234,2026-09-10 16:51:00,USR023,Engineer 23,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00235,2026-09-11 10:45:00,USR025,Engineer 25,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00236,2026-09-11 10:45:00,USR025,Engineer 25,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00237,2026-09-11 10:47:00,USR025,Engineer 25,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00238,2026-09-11 11:03:00,USR027,Engineer 27,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00239,2026-09-11 14:49:00,USR009,Engineer 09,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00240,2026-09-11 14:50:00,USR021,Engineer 21,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00241,2026-09-11 14:54:00,USR009,Engineer 09,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00242,2026-09-11 14:55:00,USR028,Engineer 28,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,1,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00243,2026-09-11 15:05:00,USR057,Engineer 57,R&D,TEAM-RD-01,PRJ005,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00244,2026-09-11 15:25:00,USR009,Engineer 09,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,2,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00245,2026-09-11 15:30:00,USR020,Engineer 20,CAE & Simulation,TEAM-CAE-01,PRJ002,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00246,2026-09-11 15:31:00,USR009,Engineer 09,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00247,2026-09-11 15:35:00,USR010,Engineer 10,Mechanical Design,TEAM-MD-02,PRJ008,SW003,ANSYS Mechanical,1,Abandoned,Synthetic Licence Server Export,Checkout denied: all licences in use
+DEN00248,2026-09-11 15:36:00,USR028,Engineer 28,CAE & Simulation,TEAM-CAE-02,PRJ010,SW003,ANSYS Mechanical,2,Retried later,Synthetic Licence Server Export,Checkout denied: all licences in use

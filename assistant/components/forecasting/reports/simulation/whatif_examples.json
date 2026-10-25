@@ -1,0 +1,122 @@
+{
+  "baseline_peak_p50_by_month": [
+    5.5,
+    5.0,
+    5.0,
+    8.0,
+    16.0,
+    7.0
+  ],
+  "whatifs": [
+    {
+      "pool": "PF073/SW006",
+      "scenario": "+2 SW006 licences",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        5.5,
+        5.0,
+        5.0,
+        8.0,
+        16.0,
+        7.0
+      ],
+      "months_at_risk": 3,
+      "change_months_at_risk": -3,
+      "expected_shortage_licence_months": 9.6485,
+      "change_expected_shortage": -4.43425
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "Up to 2 temporary SW006 licences",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        5.5,
+        5.0,
+        5.0,
+        8.0,
+        16.0,
+        7.0
+      ],
+      "months_at_risk": 3,
+      "change_months_at_risk": -3,
+      "expected_shortage_licence_months": 9.6485,
+      "change_expected_shortage": -4.43425
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "Delay P0284 by 2 months",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        5.5,
+        5.0,
+        5.0,
+        4.0,
+        10.0,
+        7.0
+      ],
+      "months_at_risk": 6,
+      "change_months_at_risk": 0,
+      "expected_shortage_licence_months": 5.60025,
+      "change_expected_shortage": -8.4825
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "Cancel P0284",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        5.5,
+        5.0,
+        5.0,
+        4.0,
+        10.0,
+        4.0
+      ],
+      "months_at_risk": 6,
+      "change_months_at_risk": 0,
+      "expected_shortage_licence_months": 4.9615,
+      "change_expected_shortage": -9.12125
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "P0284 team 14 -> 18",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        5.5,
+        5.0,
+        5.0,
+        9.0,
+        17.0,
+        8.0
+      ],
+      "months_at_risk": 6,
+      "change_months_at_risk": 0,
+      "expected_shortage_licence_months": 16.8855,
+      "change_expected_shortage": 2.80275
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "Delay P0044 (already running: invalid)",
+      "valid": false,
+      "errors": [
+        "P0044 started on 2026-03-30; only projects not yet started can be delayed."
+      ],
+      "peak_p50_by_month": [
+        5.5,
+        5.0,
+        5.0,
+        8.0,
+        16.0,
+        7.0
+      ],
+      "months_at_risk": 6,
+      "change_months_at_risk": 0,
+      "expected_shortage_licence_months": 14.08275,
+      "change_expected_shortage": 0.0
+    }
+  ]
+}

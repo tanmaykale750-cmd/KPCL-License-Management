@@ -1,0 +1,12 @@
+assumption_key,value,unit,description,status
+as_of_date,2026-09-30,date,Last day of observed usage; all 'days to renewal' use this date,Fixed by dataset
+target_peak_utilisation_pct,85,%,Peak occupancy above this = tight; used for 'buy/temporary' triggers,Proposed default - team to confirm
+safety_buffer_licences,1,licences,Spare licences kept above forecast peak,Proposed default - team to confirm
+shortage_risk_tolerance_pct,5,%,Acceptable probability that demand exceeds licences on a working day,Proposed default - team to confirm
+temporary_licence_monthly_multiplier,1.6,x (annual cost/12),Short-term/temporary licence priced at 1.6 x monthly equivalent of annual cost,Illustrative assumption - NOT a vendor quote
+temporary_demand_max_weeks,6,weeks,Demand above capacity lasting <= this is 'short-lived' -> temporary access instead of permanent purchase,Proposed default - team to confirm
+idle_flag_threshold_pct,35,%,Telemetry idle share above this marks a software/user as idle-heavy,Proposed default - team to confirm
+dormant_user_days,60,days,No session for this long = dormant entitlement,Proposed default - team to confirm
+low_utilisation_peak_pct,50,%,Peak utilisation below this = candidate to reduce at renewal,Proposed default - team to confirm
+savings_label_rule,Possible vs Confirmed,text,Savings are 'Possible' while cost source is a synthetic assumption or the renewal decision is not approved; 'Confirmed' only after verified contract price AND an approved decision,Rule
+cost_data_status,Synthetic planning assumption,text,"All prices are illustrative, not vendor quotes",Fixed by dataset

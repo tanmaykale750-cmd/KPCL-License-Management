@@ -1,0 +1,44 @@
+feature_no,requested_feature,status,dataset_columns
+1,Timestamp / date and time,partial,"cutoff_date, target_month_start (monthly, not timestamped)"
+2,Software name,used,software_id (+ name from lookup)
+3,Licence feature / pool ID,used,pool = portfolio_id x software_id (split/CV group)
+4,Number of active licences,missing,optional column active_licences_last_month
+5,Peak concurrent licence usage,used,"obs_peak_*, portfolio_peak_last_30d/90d"
+6,Average concurrent licence usage,partial,obs_peak_mean_so_far (mean of monthly peaks)
+7,Successful licence requests,missing,optional column successful_requests_last_month
+8,Denied licence requests,missing,optional column denied_requests_last_month
+9,Software sessions,missing,optional (not in prototype priority)
+10,Average session duration,missing,optional (not in prototype priority)
+11,Idle session duration,missing,optional (not in prototype priority)
+12,Historical utilisation %,missing,optional (not in prototype priority)
+13,Total licences owned,used (supply),"licences_owned_for_software, lookup: shortage/cost, not demand input"
+14,Licences available,derived (supply),portfolio_headroom_last_30d = owned - recent pool peak
+15,Licence type,used (supply),licence_inventory.license_type (all Concurrent)
+16,Licence expiry date,used (supply),"licence_inventory renewal/support_end, months_to_next_renewal"
+17,Licence renewal date,used (simulation),licence_inventory.renewal_date
+18,Cost per licence,used (simulation),software_lookup annual / monthly / temporary price
+19,Total licence expenditure,used (simulation),licences owned x annual price
+20,Licence pool capacity,used (supply),licences_owned_for_software
+21,Project ID,used,"project_id (grouping only, never an input)"
+22,Project start date,used,"months_elapsed_at_cutoff, target_pct_of_project_elapsed"
+23,Project end date,used,"deadline_months, months_remaining_to_deadline, is_final_planned_month"
+24,Project phase,used,"plan_phase_at_cutoff, plan_phase_in_target_month, phase intensities"
+25,Engineers assigned,used,team_size
+26,Software required per project,used,"software_id, n_software_in_project, software_need_weight"
+27,Ongoing projects,used + derived,"portfolio_other_active_projects_target, ongoing_*_at_cutoff"
+28,Planned future projects,derived,"planned_future_projects_6m, future_same_software_by_target"
+29,Expected project workload,used,"plan_load_index_target, plan_peak_load_target, portfolio_planned_load_target"
+30,Planned simulation jobs / tasks,partial,"plan_phase_in_target_month = Analysis & Simulation, intensity"
+31,Project priority,used,project_priority
+32,Hour of day,missing,monthly data; optional peak_hour_share_last_month
+33,Day of week,missing,monthly data; optional weekday_peak_share_last_month
+34,Month,used,target_calendar_month
+35,Working day / holiday,used,target_working_days
+36,Historical peak-demand periods,used + derived,"portfolio_peak_last_30d/90d, hist_month_peak_index"
+37,Planned project start/end periods,used,"months_remaining_to_deadline, months_need_from_target_to_deadline"
+38,Demand in similar project phases,derived,phase_demand_ratio (learned on training rows only)
+39,TARGET future peak demand,target,target_portfolio_peak_demand
+40,TARGET future average demand,missing,no pool-level average in the dataset
+41,TARGET future utilisation %,derived,forecast peak / licences owned
+42,TARGET future shortage indicator,derived,P(forecast > owned); checked against target_portfolio_shortfall_flag
+43,TARGET future shortage quantity,derived,"E[max(0, forecast - owned)]; checked against target_portfolio_shortfall_licences"

@@ -1,0 +1,17 @@
+{
+  "as_of_date": "2026-09-30",
+  "target_shortage_risk_pct": 5.0,
+  "safety_buffer_licences": 1,
+  "shortage_cost_per_shortfall_licence_day_inr": 15000,
+  "annual_working_days": 252,
+  "temporary_licence_monthly_multiplier": 1.6,
+  "temporary_demand_max_weeks": 6,
+  "max_extra_candidate_licences": 10,
+  "candidate_min_licences": 1,
+  "cost_source_verified": false,
+  "decision_approved": false,
+  "note": "Illustrative synthetic assumptions only. Member 1 and Member 2 use different pool grains; portfolio-level financial values are not additive until the team confirms pool architecture.",
+  "low_utilisation_peak_pct": 50.0,
+  "target_peak_utilisation_pct": 85.0,
+  "temporary_max_risk_months": 2
+}

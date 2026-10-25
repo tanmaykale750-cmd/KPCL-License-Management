@@ -1,0 +1,102 @@
+{
+  "baseline_peak_p50_by_month": [
+    6.0,
+    6.0,
+    6.0,
+    7.0,
+    15.0,
+    7.0
+  ],
+  "whatifs": [
+    {
+      "pool": "PF073/SW006",
+      "scenario": "+2 SW006 licences",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        6.0,
+        6.0,
+        6.0,
+        7.0,
+        15.0,
+        7.0
+      ],
+      "months_at_risk": 2,
+      "change_months_at_risk": -4,
+      "expected_shortage_licence_months": 6.792,
+      "change_expected_shortage": -3.83075
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "Up to 2 temporary SW006 licences",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        6.0,
+        6.0,
+        6.0,
+        7.0,
+        15.0,
+        7.0
+      ],
+      "months_at_risk": 2,
+      "change_months_at_risk": -4,
+      "expected_shortage_licence_months": 6.792,
+      "change_expected_shortage": -3.83075
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "Delay P0284 by 2 months",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        6.0,
+        6.0,
+        6.0,
+        5.0,
+        11.0,
+        7.0
+      ],
+      "months_at_risk": 5,
+      "change_months_at_risk": -1,
+      "expected_shortage_licence_months": 4.90875,
+      "change_expected_shortage": -5.714
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "Cancel P0284",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        6.0,
+        6.0,
+        6.0,
+        5.0,
+        11.0,
+        4.0
+      ],
+      "months_at_risk": 4,
+      "change_months_at_risk": -2,
+      "expected_shortage_licence_months": 4.46025,
+      "change_expected_shortage": -6.1625
+    },
+    {
+      "pool": "PF073/SW006",
+      "scenario": "P0284 team 14 -> 18",
+      "valid": true,
+      "errors": [],
+      "peak_p50_by_month": [
+        6.0,
+        6.0,
+        6.0,
+        8.0,
+        17.0,
+        8.0
+      ],
+      "months_at_risk": 6,
+      "change_months_at_risk": 0,
+      "expected_shortage_licence_months": 14.53325,
+      "change_expected_shortage": 3.9105
+    }
+  ]
+}

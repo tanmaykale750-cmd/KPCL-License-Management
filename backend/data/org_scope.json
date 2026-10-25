@@ -1,0 +1,63 @@
+{
+  "_comment": "Links the HR roster (employees.xlsx) to the app's licence registry and to the ML dataset. Edit this file, not the code, when departments, projects or tools change. The server re-reads it when it changes.",
+  "profiles": {
+    "admin": {
+      "label": "Admin (Head)",
+      "role_categories": ["System Admin"],
+      "summary": "Full access: every department, project, licence and cost; registry changes, fulfilment, budgets, approval limits and final sign-off."
+    },
+    "deptHead": {
+      "label": "Department Head",
+      "role_categories": ["Department Head"],
+      "summary": "Department-wide access and permissions: decides access requests, manages the department's seats and allocations, approves recommendations and project changes for the department."
+    },
+    "projectLead": {
+      "label": "Project Head",
+      "role_categories": ["Project Head"],
+      "summary": "Project timelines, phase demand and the project team's licence access; proposes project changes and runs schedule what-ifs for own projects."
+    },
+    "engineer": {
+      "label": "Engineer",
+      "role_categories": ["Staff Engineer", "Project Worker"],
+      "summary": "Licences assigned to them, availability of their tools, their own access requests and the assistant."
+    }
+  },
+  "departments": {
+    "Product R&D": {"app_dept_id": "design", "ml_departments": ["Mechanical Design"]},
+    "Analysis & CAE": {"app_dept_id": "sim", "ml_departments": ["CAE & Simulation"]},
+    "Tooling & Plant": {"app_dept_id": "mfg", "ml_departments": ["Manufacturing Engineering"]},
+    "Electrical & Embedded": {"app_dept_id": "rnd", "ml_departments": ["Electrical Design", "R&D"]},
+    "Product Engineering": {"app_dept_id": "engg", "ml_departments": ["Product Engineering"]},
+    "IT & SAM": {"app_dept_id": "it", "ml_departments": []},
+    "Engineering Ops": {"app_dept_id": "it", "ml_departments": []}
+  },
+  "projects": {
+    "PRJ-KPCL-01": {"app_project_id": "PRJ-X", "name": "Compressor redesign (Project X)"},
+    "PRJ-KPCL-02": {"app_project_id": "PRJ-FIX", "name": "Plant 3 fixture library"},
+    "PRJ-KPCL-03": {"app_project_id": "PRJ-CFD", "name": "Screw compressor CFD optimisation"},
+    "PRJ-KPCL-04": {"app_project_id": "PRJ-CTRL", "name": "Refrigeration skid controller board"},
+    "PRJ-KPCL-05": {"app_project_id": "PRJ-Y", "name": "Gearbox upgrade (Project Y)"},
+    "PRJ-SYS-00": {"app_project_id": null, "name": "Licence administration (no engineering project)"},
+    "ALL-DEPT": {"app_project_id": null, "name": "All projects of the department"}
+  },
+  "software": {
+    "SolidWorks Premium": {"app_licence_id": "SW-PREM", "ml_software_id": "SW002"},
+    "ANSYS Mechanical": {"app_licence_id": "ANS-MECH", "ml_software_id": "SW003"},
+    "Autodesk Inventor": {"app_licence_id": "INV-PRO", "ml_software_id": "SW001"},
+    "Altair HyperWorks": {"app_licence_id": "ALT-HW", "ml_software_id": "SW004"},
+    "Cadence Virtuoso": {"app_licence_id": "CAD-ALG", "ml_software_id": "SW006"}
+  },
+  "app_users": {
+    "_comment": "Employee_ID -> person in the app's sample dataset, so records already seeded for that person stay theirs.",
+    "DH201": "u-meera",
+    "DH202": "u-harish",
+    "DH203": "u-vikram",
+    "DH204": "u-anjali",
+    "DH205": "u-sanjay",
+    "PH301": "u-amit",
+    "PH302": "u-ganesh",
+    "PH303": "u-sneha",
+    "PH304": "u-arjun",
+    "PH305": "u-kavita"
+  }
+}
